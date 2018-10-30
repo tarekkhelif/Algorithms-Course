@@ -1,0 +1,26 @@
+def findTopOrder():
+    ...
+    if < cycle detected >:
+        raise Exception("Digraph is cyclic")
+    if < return without hitting candidateRoot (bottom of stack, if it already exists) >:
+        raise Exception("Digraph is not rooted")
+
+
+def isRooted():  # DEPRECATED
+    candidateRoot = topOrder[-1]
+    return reduce(g.vertices(), lambda next, res: next.isReachable(candidateRoot) and res, True)
+
+
+def isRooted():
+    oneSCC = len(scc) == 1
+    oneTerminalV = len(v in g.vertices() if v.outDegree() == 0, [])) == 1
+    return oneSCC and oneTerminalV
+
+def outcast():
+    leaves=(v in g.vertices() if v.inDegree() == 0)
+    return min(leaves, cmp = sum(dist(leaf, w) for w in g.vertices()))
+
+
+def commonAnscestor(v, w):
+    anscestorsOfV=< all vertices, marked if reachable from v.  bfs and mark = distance >
+    commonAnscestors=< all vertices, marked if (reachable from w and marked in anscestorsOfV) .  bfs and mark = distance + distFromV. if mark < bestTotalAnscestralDistance, update. >

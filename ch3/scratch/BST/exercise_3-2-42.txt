@@ -1,0 +1,19 @@
+no delete:
+size: 1008
+avg path  : 11.403769841269842
+ideal path: 9.977279923499916
+
+successor delete:
+size: 983
+avg path  : 13.55442522889115
+ideal path: 9.94104760634058
+
+predecessor delete:
+size: 993
+avg path  : 12.566968781470292
+ideal path: 9.955649907528374
+
+random delete:
+size: 989
+avg path  : 10.884732052578363
+ideal path: 9.949826710759112
